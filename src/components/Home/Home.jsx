@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Meal from '../Meal/Meal';
 
 const Home = () => {
     const [meals, setMeals] = useState([])
@@ -9,12 +10,17 @@ const Home = () => {
     }, [])
 
     return (
-        <div className='grid grid-cols-6 container mx-auto'>
-            <div className='meals-container col-span-4 bg-red-500'>
-                This is Meals container
+        <div className='grid grid-cols-6 gap-4 container mx-auto'>
+            <div className='grid grid-cols-2 gap-4 py-5 col-span-4'>
+                {
+                    meals.map(meal => <Meal 
+                    key={meal.idMeal}
+                    meal={meal}
+                    ></Meal>)
+                }
             </div>
 
-            <div className='sidebar-container col-span-2 bg-green-500'>
+            <div className='col-span-2 bg-green-500'>
                 This is Sidebar container
             </div>
         </div>
