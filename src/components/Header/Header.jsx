@@ -3,9 +3,9 @@ import React from "react";
 const Header = () => {
   return (
     <>
-      <div className="navbar mt-5 bg-gray-200 rounded-lg container mx-auto">
+      <div className="navbar mt-5 bg-gray-700 rounded-lg container mx-auto">
         <div className="flex-1">
-          <a className="font-bold text-2xl ml-2 normal-case">MeadDB</a>
+          <a className="font-bold text-2xl text-white ml-2 normal-case">MeadDB</a>
         </div>
         <div className="flex-none">
           <div className="dropdown dropdown-end">
@@ -14,7 +14,7 @@ const Header = () => {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
-                  fill="none"
+                  fill="white"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
